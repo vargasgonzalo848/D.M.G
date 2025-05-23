@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-opacity='1'%3E%3Cpath d='M30 0C31.1046 0 32 0.895431 32 2V10C32 11.1046 31.1046 12 30 12C28.8954 12 28 11.1046 28 10V2C28 0.895431 28.8954 0 30 0Z' fill='%23000000'/%3E%3Cpath d='M30 48C31.1046 48 32 48.8954 32 50V58C32 59.1046 31.1046 60 30 60C28.8954 60 28 59.1046 28 58V50C28 48.8954 28.8954 48 30 48Z' fill='%23000000'/%3E%3Cpath d='M0 30C0 28.8954 0.895431 28 2 28H10C11.1046 28 12 28.8954 12 30C12 31.1046 11.1046 32 10 32H2C0.895431 32 0 31.1046 0 30Z' fill='%23000000'/%3E%3Cpath d='M48 28C49.1046 28 50 28.8954 50 30C50 31.1046 49.1046 32 48 32H58C59.1046 32 60 31.1046 60 30C60 28.8954 59.1046 28 58 28H48Z' fill='%23000000'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 40px 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 15px 20px;
+  background-color: #ffffffcc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007acc;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+header nav button:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+.logo-container {
+  margin-top: 40px;
+}
+
+.logo-container img {
+  width: 360px;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  color: #2c3e50;
+  margin: 10px 0 5px 0;
+}
+
+h2 {
+  letter-spacing: 3px;
+  color: gray;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-buttons button {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-buttons .google {
+  background-color: #ff1500;
+}
+
+.login-buttons .facebook {
+  background-color: #3b5998;
+}
+
+.login-buttons .email {
+  background-color: #555555;
+}
+
+.login-buttons img {
+  width: 20px;
+  height: 20px;
+}
+
