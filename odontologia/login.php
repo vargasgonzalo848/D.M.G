@@ -6,7 +6,7 @@ if (isset($_SESSION['usuario']) && isset($_SESSION['rol'])) {
     if ($_SESSION['rol'] === 'admin') {
         header("Location: dashboard.php");
     } else {
-        header("Location: panel_paciente.php");
+        header("Location: servicios.php");
     }
     exit();
 }
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($rol === 'admin') {
                 header("Location: dashboard.php");
             } else {
-                header("Location: panel_paciente.php");
+                header("Location: servicios.php");
             }
             exit;
         } else {
@@ -123,3 +123,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
