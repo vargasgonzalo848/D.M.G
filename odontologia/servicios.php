@@ -1,7 +1,50 @@
+<?php
+session_start();
+include("includes/db.php");
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.php");
+    exit();
+}
+include("includes/header.php");
+$usuario = $_SESSION['usuario'];
+
+$stmt = $conn->prepare("
+    SELECT u.rol, p.id AS paciente_id, p.nombre, p.apellido, p.email, p.telefono
+    FROM usuarios u
+    LEFT JOIN pacientes p ON u.id_paciente = p.id
+    WHERE u.nombre_usuario = ?
+");
+$stmt->bind_param("s", $usuario);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows !== 1) {
+    session_destroy();
+    header("Location: login.php");
+    exit();
+}
+
+$data = $result->fetch_assoc();
+
+if ($data['rol'] !== 'paciente' || $data['paciente_id'] === null) {
+    session_destroy();
+    header("Location: login.php");
+    exit();
+}
+
+$pacienteId = $data['paciente_id'];
+$_SESSION['id_paciente'] = $pacienteId;
+
+$stmt_turnos = $conn->prepare("SELECT * FROM turnos WHERE id_pacientes = ? ORDER BY fecha_turno DESC, hora_turno DESC");
+$stmt_turnos->bind_param("i", $pacienteId);
+$stmt_turnos->execute();
+$resultadoTurnos = $stmt_turnos->get_result();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <?php include("includes/header.php"); ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios Odontológicos</title>
@@ -119,3 +162,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
