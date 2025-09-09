@@ -52,7 +52,7 @@ $hoy = date("Y-m-d");
     </tr>
   </thead>
   <tbody>
-    <?php if ($resultado->num_rows > 0): ?>
+    <?php if ($resultado && $reultado->num_rows > 0): ?>
         <?php while ($fila = $resultado->fetch_assoc()): ?>
             <?php
                 $esHoy = ($fila['fecha_turno'] === $hoy);
