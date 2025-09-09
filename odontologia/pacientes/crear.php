@@ -30,6 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($errores)) {
         $verificarCedula = $conn->prepare("SELECT id FROM pacientes WHERE cedula = ?");
         $verificarCedula->bind_param("s", $cedula);
+        
         $verificarCedula->execute();
         $resCedula = $verificarCedula->get_result();
         if ($resCedula->num_rows > 0) {
