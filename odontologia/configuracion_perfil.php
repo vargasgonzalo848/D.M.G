@@ -114,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Cédula (Uruguaya, 8 dígitos)</label>
-                            <input type="text" name="cedula" class="form-control" maxlength="8" pattern="\d{8}" title="Debe tener 8 números" value="<?= htmlspecialchars($paciente['cedula']) ?>" required>
+                            <input type="text" name="cedula" class="form-control" maxlength="8" pattern="\d{8}" title="Debe tener 8 números" value="<?= htmlspecialchars($paciente['cedula'] ?? '') ?>" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Fecha de Nacimiento</label>

@@ -104,7 +104,7 @@ $turnos = $conn->query("
           </tr>
         </thead>
         <tbody>
-          <?php if ($turnos->num_rows > 0): ?>
+          <?php if ($turnos && $turnos->num_rows > 0): ?>
             <?php while($row = $turnos->fetch_assoc()): ?>
               <tr>
                 <td><?= $row['hora_turno'] ?></td>
