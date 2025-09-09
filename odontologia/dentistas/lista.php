@@ -14,7 +14,7 @@ if ($buscar) {
     $stmt->execute();
     $resultado = $stmt->get_result();
 } else {
-    $sql = "SELECT * FROM Dentistas ORDER BY apellido, nombre";
+    $sql = "SELECT * FROM Dentistas ORDER BY apellido, nombre, cedula";
     $resultado = $conn->query($sql);
 }
 ?>
@@ -45,7 +45,7 @@ if ($buscar) {
     </tr>
   </thead>
   <tbody>
-    <?php if ($resultado->num_rows > 0): ?>
+    <?php if ($resultado && $resultado->num_rows > 0): ?>
       <?php while ($fila = $resultado->fetch_assoc()): ?>
         <tr>
           <td><?= $fila['id'] ?></td>
