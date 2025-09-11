@@ -122,19 +122,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                    min="1930-01-01" max="<?= date("Y-m-d") ?>"
                                    value="<?= htmlspecialchars($paciente['fecha_nacimiento']) ?>" required>
                         </div>
+                        
                         <button type="submit" class="btn btn-success w-100">
                             <i class="bi bi-save me-1"></i> Guardar Cambios
                         </button>
                         <a href="panel_paciente.php" class="btn btn-secondary w-100 mt-2">
                             <i class="bi bi-arrow-left-circle me-1"></i> Volver al Panel
                         </a>
-                    </form>
+                        </form>
+                        <form action="/odontologia/logout.php" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-danger px-4 py-2 mt-2 w-100">Cerrar sesión</button>
+                        </form>
+                        
+                        
+
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<?php include("includes/footer.php"); ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
