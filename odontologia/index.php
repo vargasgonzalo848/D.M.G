@@ -9,7 +9,7 @@ include("includes/header.php");
          class="mb-3 bg-white p-2 rounded-circle shadow"
          style="max-width: 120px;">
 
-    <h1 class="display-4 fw-bold">Bienvenido a Odontología Sonrisa</h1>
+    <h1 class="display-4 fw-bold">Bienvenido a Odontología Fanny</h1>
     <p class="lead">Cuidamos tu sonrisa con los mejores especialistas y tecnología avanzada</p>
   </div>
 </section>
