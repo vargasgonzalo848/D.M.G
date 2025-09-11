@@ -52,7 +52,7 @@ $hoy = date("Y-m-d");
     </tr>
   </thead>
   <tbody>
-    <?php if ($resultado && $reultado->num_rows > 0): ?>
+    <?php if ($resultado && $resultado->num_rows > 0): ?>
         <?php while ($fila = $resultado->fetch_assoc()): ?>
             <?php
                 $esHoy = ($fila['fecha_turno'] === $hoy);
@@ -84,3 +84,4 @@ $hoy = date("Y-m-d");
 </table>
 
 <?php include("../includes/footer.php"); ?>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
