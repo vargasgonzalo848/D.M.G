@@ -7,7 +7,7 @@ body {
 
 h1, h2, h3, h4 {
   font-weight: 700;
-  color: #ff00ea;
+  color: #01147c;
 }
 
 h1.text-primary {
@@ -105,3 +105,4 @@ img.rounded.shadow:hover {
     transform: translateY(0);
   }
 }
+
