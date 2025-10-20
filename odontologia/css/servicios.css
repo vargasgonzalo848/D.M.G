@@ -107,6 +107,7 @@ body {
 .service-card .card-body {
   padding: 25px;
   text-align: center;
+  cursor: pointer;
 }
 
 .service-card .card-title {
@@ -114,12 +115,14 @@ body {
   font-weight: 600;
   color: #002f4b;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .service-card .card-text {
   font-size: 0.95rem;
   color: #555;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .price {
