@@ -139,4 +139,8 @@ body {
   .hero p {
     font-size: 1rem;
   }
+} 
+img:hover {
+  cursor: pointer;
 }
+
