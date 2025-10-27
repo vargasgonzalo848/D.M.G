@@ -129,5 +129,5 @@ $pacientes = $conn->query("SELECT id, nombre, apellido FROM Pacientes ORDER BY n
   <button type="submit" class="btn btn-primary">Guardar</button>
   <a href="lista.php" class="btn btn-secondary">Cancelar</a>
 </form>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <?php include("../includes/footer.php"); ?>
