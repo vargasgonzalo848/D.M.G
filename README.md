@@ -1,4 +1,7 @@
 Cliente: Odontologia Fanny
+
+La aplicación web odontológica fue planeada para facilitar la manera en la que las personas piden consultas, se comuniquen con el dentista y puedan pedir fecha para atenderse de forma rápida. El cliente puede registrarse o iniciar sesión, en caso de tener una cuenta. Una vez hecho eso puede revisar la información de la empresa, ver los servicios y pedir turnos o ver los que ya tiene. Por otro lado, el dentista puede controlar los clientes, los turnos y tratamientos.
+
 Lider: Gonzalo Vargas
 
 Programador PHP: Alerson Morales
@@ -13,3 +16,4 @@ Contenido del Sitio Web:
 Usuario no iniciado: Este Usuario solo tiene la posibilidad de ver la informacion del sitio web osea la ubicacion de la odontologia, horarios y tratamientos. Lo unico que no tiene disponible es el pedido de Turno.
 Cliente: El usuario esta en su disponibilidad el poder solicitar un turno y revisar el contenido de el sitio web.
 Administrador: Puede gestionar facilmente los dentistas, clientes, turnos y tratamientos. Ademas de tener a su vision toda la informacion de los clientes, dentistas, turnos, tratamientos teniendo una facilidad increible ademas de velocidad en su uso.
+
