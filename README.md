@@ -17,3 +17,15 @@ Usuario no iniciado: Este Usuario solo tiene la posibilidad de ver la informacio
 Cliente: El usuario esta en su disponibilidad el poder solicitar un turno y revisar el contenido de el sitio web.
 Administrador: Puede gestionar facilmente los dentistas, clientes, turnos y tratamientos. Ademas de tener a su vision toda la informacion de los clientes, dentistas, turnos, tratamientos teniendo una facilidad increible ademas de velocidad en su uso.
 
+Programas utilizado en la creacion del sitio web:
+PHP: Utilizamos php porque con eso pudimos conectar y mejorar toda la parte de la base de datos y la logica del sistema.
+SQL: Sql lo hemos utilizado para guardar toda la informacion del usuario y administrador como tambien para las consultas.
+CSS: Lo usamos para darle estilo al sitio web.
+Python: Lo utilizamos para la creacion del chatbot.
+Javascript: Con JS en lo que lo hemos utilizado fueron en los links externo para la mejora interactiva en los estilos.
+Html: El html lo utilizamos para la estructura del sitio web.
+
+
+
+
+
