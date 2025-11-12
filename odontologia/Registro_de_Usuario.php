@@ -4,7 +4,7 @@ include("includes/db.php");
 
 if (isset($_SESSION['usuario']) && isset($_SESSION['rol'])) {
     if ($_SESSION['rol'] === 'admin') {
-        header("Location: index.php");
+        header("Location: dashboard.php");
     } else {
         header("Location: index.php");
     }
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
             }
 
             if ($rol === 'admin') {
-                header("Location: index.php");
+                header("Location: dashboard.php");
             } else {
                 header("Location: index.php");
             }
